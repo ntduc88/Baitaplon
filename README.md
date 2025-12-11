@@ -2,15 +2,42 @@
 
 Ứng dụng mẫu bằng Java (Swing) để quản lý học sinh và điểm cho trường trung học cơ sở.
 
-Tính năng chính:
-- Quản lý học sinh: thêm / sửa / xóa, kiểm tra trùng mã HS
-- Quản lý điểm: thêm nhiều điểm Thường Xuyên (TX), Giữa kỳ (GK), Cuối kỳ (CK)
-- Tính DTB môn theo công thức trọng số
-- Dashboard: thống kê tổng HS, Top 5 theo DTB, biểu đồ phân loại học lực
-- Lưu / khôi phục dữ liệu vào thư mục `data/` (CSV)
-- Xuất báo cáo CSV
+### Tính năng chính:
+- ☑️Quản lý học sinh: thêm / sửa / xóa, kiểm tra trùng mã HS
+- ☑️Quản lý điểm: thêm nhiều điểm Thường Xuyên (TX), Giữa kỳ (GK), Cuối kỳ (CK)
+- ☑️Tính DTB môn theo công thức trọng số
+- ☑️Dashboard: thống kê tổng HS, Top 5 theo DTB, biểu đồ phân loại học lực
+- ☑️Lưu / khôi phục dữ liệu vào thư mục `data/` (CSV)
+- ☑️Xuất báo cáo CSV
 
-Files chính trong `src/`:
+### 🗃Cấu trúc dự án
+```
+QLDiemTHCS/
+└── quanlydiemthcs/
+    ├── .vscode/
+    │   └── settings.json
+    │
+    ├── bin/
+    ├── out/
+    │
+    ├── quanlydiem.jar
+    ├── README.md
+    ├── REPORT_QuanLyDiem.html
+    │
+    ├── src/
+    │   ├── App.java
+    │   ├── Diem.java
+    │   ├── GiaoDienChinh.java
+    │   ├── HocSinh.java
+    │   ├── LuuDuLieu.java
+    │   ├── QuanLyDiem.java
+    │   ├── QuanLyHocSinh.java
+    │   └── UtilsThongKe.java
+    │
+    ├── .gitignore
+    └── run.bat
+```
+📂Files chính trong `src/`:
 - `App.java` - điểm bắt đầu, khởi chạy UI
 - `GiaoDienChinh.java` - giao diện Swing với Dashboard, Quản lý học sinh, Quản lý điểm
 - `HocSinh.java`, `Diem.java` - các lớp mô hình
@@ -18,7 +45,7 @@ Files chính trong `src/`:
 - `LuuDuLieu.java` - lưu / khôi phục CSV trong `data/`
 - `UtilsThongKe.java` - hàm thống kê
 
-Hướng dẫn biên dịch & chạy (Windows PowerShell):
+### Hướng dẫn biên dịch & chạy (Windows PowerShell):
 
 1) Cài đặt JDK (nếu chưa có): tải OpenJDK / Oracle JDK và thêm `javac`/`java` vào `PATH`.
 
